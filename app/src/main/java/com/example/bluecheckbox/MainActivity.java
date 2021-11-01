@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tx1;
     RadioButton rad1,rad2,rad3;
     RadioGroup rg1;
+    private Spinner spin1;
+String[] names=new String[]{"大明","傑哥","阿偉"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
     private CheckBox.OnCheckedChangeListener myList = new CheckBox.OnCheckedChangeListener()
     {
+        //建立ArrayAdapter
+        ArrayAdapter<String> adapterNames=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,names);
+
+        //設定Spinner顯示格式
+        adapterNames.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             String result = "";
             if (chk1.isChecked()) {

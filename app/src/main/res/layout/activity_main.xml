@@ -10,27 +10,9 @@
         android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="184dp"
         android:text="看電影"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="59dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
-        tools:layout_editor_absoluteX="61dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="跑步"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox1"
         tools:layout_editor_absoluteX="59dp" />
 
     <RadioGroup
@@ -38,7 +20,7 @@
         android:layout_width="316dp"
         android:layout_height="126dp"
         tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="302dp">
+        tools:layout_editor_absoluteY="410dp">
 
         <RadioButton
             android:id="@+id/rad1"
@@ -58,5 +40,30 @@
             android:layout_height="wrap_content"
             android:text="雲林" />
     </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="跑步"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+        tools:layout_editor_absoluteX="59dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        tools:layout_editor_absoluteX="61dp" />
+
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_width="346dp"
+        android:layout_height="28dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="44dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
