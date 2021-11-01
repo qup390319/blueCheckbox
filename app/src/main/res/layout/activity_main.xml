@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="看電影"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="59dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        tools:layout_editor_absoluteX="61dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="跑步"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+        tools:layout_editor_absoluteX="59dp" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="316dp"
+        android:layout_height="126dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="302dp">
+
+        <RadioButton
+            android:id="@+id/rad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="台南" />
+
+        <RadioButton
+            android:id="@+id/rad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高雄" />
+
+        <RadioButton
+            android:id="@+id/rad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="雲林" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
