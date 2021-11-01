@@ -48,7 +48,7 @@ String[] names=new String[]{"大明","傑哥","阿偉"};
         ArrayAdapter<String> adapterNames=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,names);
 
         //設定Spinner顯示格式
-        adapterNames.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterNames.setDropDownViewResource (android.R.layout.simple_spinner_dropdown_item);
 
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             String result = "";
