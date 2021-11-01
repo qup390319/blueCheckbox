@@ -55,6 +55,7 @@ String[] names=new String[]{"大明","傑哥","阿偉"};
             if (chk1.isChecked()) {
                 result = "看電影";
             }
+
             if (chk2.isChecked()) {
                 result = "跑步";
             }
